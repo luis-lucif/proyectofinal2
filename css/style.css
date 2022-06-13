@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* nav-bar */
+
+ .navbar{
+  margin-top: -1em;
+ 
+}
+
+ .navbar-nav .nav-link:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(5, 109, 33);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 1.5s;
+    
+}
+
+ .navbar-nav .nav-link:hover::after{
+    width: 100%;
+}
+
+ .navbar-nav .nav-link:hover{
+    color: #000000;
+    transform: scale(1.5);
+    font-weight: bold;
+    transition: 1s;
+
+    
+}
+
+@media screen and (max-width: 990px){
+        .navbar{
+           text-align: center;
+           margin-top: -1em;
+        }
+}
+
+
+/* formulario */
+
+.body-formulario{
+    background-image: url(/img/contacto.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+form{
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+
+.h2-formulario{
+    color:  rgb(5, 109, 33);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton-formulario{
+    background-color:rgb(5, 109, 33) ;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px;
+
+}
+
+#boton-formulario:hover{
+  transform: scale(1.1);
+}
+
+@media (max-width:480px){
+    form{
+        width: 100%;
+    }
+}
+
+
+/* footer */
+
+.pie-pagina{
+    background-color:rgb(5, 109, 33) ;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 100px
+}
+
+.img-footer{
+    width: 250px;
+    margin-right: 100px;
+    
+}
+
+.h2-footer{
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.fa{
+    font-size: 200%;
+    margin: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+@media screen and (max-width:550px){
+    .pie-pagina{
+        
+        background-color: rgb(5, 109, 33);
+          
+    }
+    .img-footer{
+       margin-right: 0;
+       margin-left: -100px;
+       
+    }
+    .fa{
+        display: flex;
+        flex-direction: initial;
+        font-size: 20px;
+    
+    }
+}
+
+/* bibliografia */
+
+.card{
+    background-color:rgb(5, 109, 33) ;
+    border-color: #000000;
+    border: 5px solid;
+        
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.card-text{
+    text-align: center;
+    font-weight: bold;
+}
+
+.body-bibliografia{
+    background: rgb(2,45,14);
+    background: linear-gradient(90deg, rgba(2,45,14,1) 15%, rgba(2,45,14,1) 33%, rgba(14,102,19,1) 45%, rgba(7,70,16,1) 59%, rgba(24,154,23,1) 72%, rgba(2,45,14,1) 90%, rgba(37,214,28,1) 100%, rgba(20,130,21,1) 100%, rgba(37,214,28,1) 100%, rgba(38,218,29,1) 100%, rgba(39,222,29,1) 100%, rgba(0,36,13,1) 100%, rgba(4,55,15,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+
+
+
+
+
+
+
